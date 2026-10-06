@@ -82,6 +82,10 @@ public class Main {
             com = new RemoveMember();
         } else if (fullLine.startsWith("ADD EVENT")) {
             com = new AddEvent();
+        } else if (fullLine.startsWith("ADD DEPENDENCY")) {
+            com = new AddDependency();
+        } else if (fullLine.startsWith("PROCESS ALERTS")) {
+            com = new ProcessAlerts();
         }
 
         if (com != null) {

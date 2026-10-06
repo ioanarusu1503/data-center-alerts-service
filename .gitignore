@@ -48,3 +48,6 @@ gradlew
 gradlew.bat
 build.gradle.kts
 settings.gradle.kts
+
+### Generated program output ###
+*.out

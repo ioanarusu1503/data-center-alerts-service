@@ -1,0 +1,11 @@
+ADD DEPENDENCY: 10.0.0.1 -> 10.0.0.2
+ADD DEPENDENCY: 10.0.0.2 -> 10.0.0.3
+ADD DEPENDENCY: Dependency already exists: 10.0.0.2 -> 10.0.0.3 ## line no: 3
+ADD DEPENDENCY: A server cannot depend on itself: ipAddress = 10.0.0.1 ## line no: 4
+ADD DEPENDENCY: Server not found: ipAddress = 9.9.9.9 ## line no: 5
+ADD EVENT: 10.0.0.3: type = ADVISORY && severity = LOW && message = Storage usage 40%
+ADD EVENT: 10.0.0.1: type = ANOMALY && severity = CRITICAL && message = DDoS
+PROCESS ALERT: 10.0.0.1: severity = CRITICAL && message = DDoS
+AT RISK: 10.0.0.2
+AT RISK: 10.0.0.3
+PROCESS ALERT: 10.0.0.3: severity = LOW && message = Storage usage 40%
