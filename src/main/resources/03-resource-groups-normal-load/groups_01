@@ -1,0 +1,6 @@
+ADD GROUP: MissinglpAddress Exception: Server IP Address was not provided.    line no: 2
+ADD MEMBER: MissinglpAddress Exception: Server IP Address was not provided.    line no: 3
+ADD MEMBER: MissinglpAddress Exception: Server IP Address was not provided.    line no: 4
+ADD MEMBER: MissinglpAddress Exception: Server IP Address was not provided.    line no: 5
+ADD MEMBER: MissinglpAddress Exception: Server IP Address was not provided.    line no: 6
+FIND MEMBER: MissinglpAddress Exception: Server IP Address
