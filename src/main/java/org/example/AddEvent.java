@@ -20,10 +20,9 @@ public class AddEvent implements Command {
 
             Alert alert = new Alert(type, severity, message, ipAddress);
             db.addAlert(alert);
+            db.enqueueAlert(alert);
 
-            db.getServers().stream()
-                    .filter(s -> s.getIpAddress().equals(ipAddress))
-                    .findFirst()
+            db.findServer(ipAddress)
                     .ifPresent(server -> {
                         db.findGroup(ipAddress).ifPresent(group -> {
                             server.setMonitorGroup(group);

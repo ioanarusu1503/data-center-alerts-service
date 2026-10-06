@@ -1,0 +1,4 @@
+command|ip_address
+ADD GROUP|10.0.0.1
+ADD GROUP|10.0.0.2
+ADD GROUP|10.0.0.3

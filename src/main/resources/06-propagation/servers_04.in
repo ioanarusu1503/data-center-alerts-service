@@ -1,0 +1,4 @@
+command|hostname|ip_address|server_status|country|city|address|latitude|longitude|user_name|user_role|user_email|user_department|user_clearance_level|cpu_cores|ram_gb|storage
+ADD SERVER|server.ro|10.0.0.1|UP|Romania|Bucharest||||Ilie|Admin|ilie@server.ro|R&D|7|68|1240|880000
+ADD SERVER|server.ro|10.0.0.2|UP|Bulgaria|Sofia||||Todorka|Operator|todorka@server.ro|IT&C||42|880|124000
+ADD SERVER|server.ro|10.0.0.3|DOWN|Italy|Rome||||Mario|Operator|mario@server.ro|IT&C||36|960|124000
